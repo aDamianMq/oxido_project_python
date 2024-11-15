@@ -21,8 +21,7 @@ def generate_html_from_article(article_text):
 
     Proszę wygenerować odpowiedni kod HTML bez tagów <html>, <head>, <body> (tylko zawartość <body>).
     """
-
-    # Poprawione wywołanie API OpenAI
+    
     response = openai.chat.completions.create(
         model="gpt-4-turbo",
         messages=[{"role": "user", "content": prompt}],
